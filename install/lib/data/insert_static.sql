@@ -55,7 +55,7 @@ COMMIT;
     1,
     '{"manufacturer"   :    "SYSTEM ACCOUNT",
       "description"    :    "default catchall manufacturer",
-      "wesite"         :    "www.oracle.com",
+      "website"         :    "www.oracle.com",
       "email"          :    "noreply@oracle.com",
       "country"        :    "US",
       "street"         :    "Oracle Parkway",

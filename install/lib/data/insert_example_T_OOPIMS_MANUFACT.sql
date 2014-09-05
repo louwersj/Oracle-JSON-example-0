@@ -98,4 +98,28 @@
      }'
    );
    
+    INSERT INTO T_OOPIMS_MANUFACT 
+   (
+    MANUFAC_NAME, 
+    MANUFAC_STATUS,
+    MANUFAC_DETAILS
+   ) 
+    VALUES 
+   (
+    'HP',
+    1,
+    '{"manufacturer"   :    "HP",
+      "description"    :    "Hewlett-Packard Company",
+      "website"         :    "www.hp.com",
+      "email"          :    "noreply@hp.com",
+      "country"        :    "US",
+      "street"         :    "Hanover Street",
+      "Housenumber"    :    "",
+      "city"           :    "Palo Alto",
+      "zipcode"        :    "94304",
+      "state"          :    "CA",
+      "phone"          :    "+1.650-857-1501"
+     }'
+   );
+   
    commit;

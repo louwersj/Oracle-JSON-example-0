@@ -7,6 +7,8 @@
  * LOG:
  * VERSION---DATE--------NAME-------------COMMENT
  * 0.1       04SEP2014   Johan Louwers    Initial upload to github.com
+ * 0.2       05SEP2014   Johan Louwers    added constraints for T_OOPIMS_MANUFACT table
+ * 0.3       05SEP2014   Johan Louwers    corrected comments.
  *
  * LICENSE:
  * Copyright (C) 2014  Johan Louwers

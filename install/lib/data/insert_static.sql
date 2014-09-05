@@ -40,3 +40,33 @@ COMMIT;
 -- Generate the default ADMIN account which needs to be preset in every deployment. 
 INSERT INTO T_OOPIMS_ACCOUNTS (ACC_NAME,ACC_FIRST_NAME,ACC_LAST_NAME,ACC_EMAIL,ACC_STATUS) VALUES ('ADMIN','SYSTEM ACCOUNT','SYSTEM ACCOUNT','NO@DOMAIN.COM',1);
 COMMIT;
+
+
+-- insert a default manufacturer. This is used as a "catch all" in some cases. 
+ INSERT INTO T_OOPIMS_MANUFACT 
+   (
+    MANUFAC_NAME, 
+    MANUFAC_STATUS,
+    MANUFAC_DETAILS
+   ) 
+    VALUES 
+   (
+    'DEFAULT',
+    1,
+    '{"manufacturer"   :    "SYSTEM ACCOUNT",
+      "description"    :    "default catchall manufacturer",
+      "wesite"         :    "www.oracle.com",
+      "email"          :    "noreply@oracle.com",
+      "country"        :    "US",
+      "street"         :    "Oracle Parkway",
+      "Housenumber"    :    "500",
+      "city"           :    "Redwood Shores",
+      "zipcode"        :    "94065",
+      "state"          :    "CA",
+      "phone"          :    "+1.650.506.7000"
+     }'
+   );
+   
+   COMMIT;
+   
+   

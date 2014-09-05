@@ -30,7 +30,13 @@
  */
 
 
--- Populate table T_STATIC_STATUS
+-- Populate table T_STATIC_STATUS. Values are used to state the status of an object.
+-- Objects can be everything, for example, accounts, products and catalogs. 
 INSERT INTO T_STATIC_STATUS (STATUS_NAME, STATUS_SHORT_DESC) VALUES ('ACTIVE', 'Status of the object is active');
 INSERT INTO T_STATIC_STATUS (STATUS_NAME, STATUS_SHORT_DESC) VALUES ('INACTIVE', 'Status of the object is inactive');
+COMMIT;
+
+
+-- Generate the default ADMIN account which needs to be preset in every deployment. 
+INSERT INTO T_OOPIMS_ACCOUNTS (ACC_NAME,ACC_FIRST_NAME,ACC_LAST_NAME,ACC_EMAIL,ACC_STATUS) VALUES ('ADMIN','SYSTEM ACCOUNT','SYSTEM ACCOUNT','NO@DOMAIN.COM',1);
 COMMIT;

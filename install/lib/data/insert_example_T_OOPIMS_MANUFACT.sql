@@ -98,6 +98,8 @@
      }'
    );
    
+   
+   -- Note Housenumber is null as an example. 
     INSERT INTO T_OOPIMS_MANUFACT 
    (
     MANUFAC_NAME, 
@@ -119,6 +121,30 @@
       "zipcode"        :    "94304",
       "state"          :    "CA",
       "phone"          :    "+1.650-857-1501"
+     }'
+   );
+   
+   
+ -- note that rambus is missing information as an example. 
+  INSERT INTO T_OOPIMS_MANUFACT 
+   (
+    MANUFAC_NAME, 
+    MANUFAC_STATUS,
+    MANUFAC_DETAILS
+   ) 
+    VALUES 
+   (
+    'Rambus',
+    1,
+    '{"manufacturer"   :    "Rambus",
+      "description"    :    "Rambus Corporate Headquarters",
+      "website"         :    "www.rambus.com",
+      "email"          :    "noreply@rambus.com",
+      "country"        :    "US",
+      "city"           :    "Sunnyvale",
+      "zipcode"        :    "94089",
+      "state"          :    "CA",
+      "phone"          :    "+1.408 462 8000"
      }'
    );
    

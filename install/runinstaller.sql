@@ -26,3 +26,43 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  * 
  */
+
+-- tabel creation script(s)
+@./lib/create_T_OOPIMS_ACCOUNTS.sql
+@./lib/create_T_OOPIMS_CATALOG.sql
+@./lib/create_T_OOPIMS_PRODUCTDETAILS.sql
+@./lib/create_T_OOPIMS_PRODUCTS.sql
+@./lib/create_T_OOPMIS_CATITEMS.sql
+@./lib/create_T_STATIC_STATUS.sql
+@./lib/create_T_OOPIMS_MANUFACT.sql
+
+-- table constaints script(s)
+@./lib/create_table_CONSTRAINTS.sql
+@./lib/create_table_JSON_CONSTRAINTS.sql
+
+-- Sequence create script(s)
+@./lib/create_S_OOPIMS_ACCOUNTS.sql
+@./lib/create_S_OOPIMS_CATALOG.sql
+@./lib/create_S_OOPIMS_PRODUCTDETAILS.sql
+@./lib/create_S_OOPIMS_PRODUCTS.sql
+@./lib/create_S_OOPMIS_CATITEMS.sql
+@./lib/create_S_STATIC_STATUS.sql
+@./lib/create_S_OOPIMS_MANUFACT.sql
+
+-- create triggers script(s)
+@./lib/create_TR_OOPIMS_ACCOUNTS_ID.sql
+@./lib/create_TR_OOPIMS_CATALOG_ID.sql
+@./lib/create_TR_OOPIMS_PRODUCTDETAILS_ID.sql
+@./lib/create_TR_OOPIMS_PRODUCTS_ID.sql
+@./lib/create_TR_OOPMIS_CATITEMS_ID.sql
+@./lib/create_TR_STATIC_STATUS_ID.sql
+@./lib/create_TR_OOPMIS_MANUFACT_ID.sql
+
+-- enable triggers script(s)
+@./lib/enable_triggers.sql
+
+-- Create views script(s)
+@./lib/create_V_MANUFACTURER_DETAILS.sql
+
+-- insert static data script(s)
+@./lib/data/insert_static.sql

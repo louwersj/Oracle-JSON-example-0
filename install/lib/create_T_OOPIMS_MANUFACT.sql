@@ -7,6 +7,7 @@
  * LOG:
  * VERSION---DATE--------NAME-------------COMMENT
  * 0.1       05SEP2014   Johan Louwers    Initial upload to github.com
+ * 0.2       05SEP2014   Johan Louwers    corrected typo
  *
  * LICENSE:
  * Copyright (C) 2014  Johan Louwers
@@ -30,7 +31,7 @@
  CREATE TABLE T_OOPIMS_MANUFACT
   (
     ID           INTEGER NOT NULL ,
-    MANUFAC_NAME VARCHAR2 ,
+    MANUFAC_NAME VARCHAR2 (200) ,
     MANUFAC_DETAILS CLOB ,
     MANUFAC_STATUS INTEGER NOT NULL
   ) ;

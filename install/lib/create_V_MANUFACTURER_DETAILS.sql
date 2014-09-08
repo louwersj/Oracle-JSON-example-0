@@ -10,6 +10,7 @@
  * LOG:
  * VERSION---DATE--------NAME-------------COMMENT
  * 0.1       05SEP2014   Johan Louwers    Initial upload to github.com
+ * 0.2       08SEP2014   Johan Louwers    Small change to view def.
  *
  * LICENSE:
  * Copyright (C) 2014  Johan Louwers
@@ -30,8 +31,9 @@
  * 
  */
 
-CREATE VIEW V_MANUFACTURER_DETAILS
-AS SELECT
+
+  CREATE OR REPLACE FORCE NONEDITIONABLE VIEW "SYSTEM"."V_MANUFACTURER_DETAILS" ("MAN_ID", "MAN_NAME", "MAN_DESCRIPTION", "MAN_WEBSITE", "MAN_EMAIL", "MAN_ADDRESS", "MAN_CITY", "MAN_COUNTRY", "MAN_ZIPCODE", "MAN_STATE", "MAN_PHONE") AS 
+  SELECT
        MANU.ID                                                              AS man_id,
        lower(MANU.MANUFAC_NAME)                                             AS man_name,
        MANU.MANUFAC_DETAILS.description                                     AS man_description,

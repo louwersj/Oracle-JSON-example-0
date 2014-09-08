@@ -7,6 +7,7 @@
  * LOG:
  * VERSION---DATE--------NAME-------------COMMENT
  * 0.1       04SEP2014   Johan Louwers    Initial upload to github.com
+ * 0.2       08SEP2014   Johan Louwers    Added the creation of a view.
  *
  * LICENSE:
  * Copyright (C) 2014  Johan Louwers
@@ -63,6 +64,7 @@
 
 -- Create views script(s)
 @./lib/create_V_MANUFACTURER_DETAILS.sql
+@./lib/create_V_MANUFACTURER_SUBSLOC.sql
 
 -- insert static data script(s)
 @./lib/data/insert_static.sql
